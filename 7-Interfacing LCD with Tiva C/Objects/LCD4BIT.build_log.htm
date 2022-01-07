@@ -1,0 +1,115 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.36.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: eslam gamal, sdasd, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.36.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.16
+Assembler:       Armasm.exe V6.16
+Linker/Locator:  ArmLink.exe V6.16
+Library Manager: ArmAr.exe V6.16
+Hex Converter:   FromElf.exe V6.16
+CPU DLL:         SARMCM3.DLL V5.36.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      lmidk-agdi.dll V???
+Dialog DLL:      TCM.DLL V1.53.0.0
+ 
+<h2>Project:</h2>
+E:\Tiva C projects\LCD4BIT\LCD4BIT.uvprojx
+Project File Date:  01/06/2022
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.16', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Rebuild target 'Target 1'
+assembling startup_TM4C123.s...
+RTE/Device/TM4C1230H6PM/system_TM4C123.c(13): warning: In file included from...
+C:/Users/Eslam Gamal/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123.h(22): warning: In file included from...
+C:/Users/Eslam Gamal/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C1230H6PM.h(286): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Eslam Gamal/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C1230H6PM.h(326): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Eslam Gamal/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C1230H6PM.h(345): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Eslam Gamal/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C1230H6PM.h(572): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Eslam Gamal/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C1230H6PM.h(588): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Eslam Gamal/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C1230H6PM.h(694): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+6 warnings generated.
+compiling system_TM4C123.c...
+main.c(1): warning: In file included from...
+C:/Users/Eslam Gamal/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123.h(22): warning: In file included from...
+C:/Users/Eslam Gamal/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C1230H6PM.h(286): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Eslam Gamal/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C1230H6PM.h(326): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Eslam Gamal/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C1230H6PM.h(345): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Eslam Gamal/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C1230H6PM.h(572): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Eslam Gamal/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C1230H6PM.h(588): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Eslam Gamal/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C1230H6PM.h(694): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+main.c(67): warning: implicit conversion loses integer precision: 'int' to 'unsigned char' [-Wimplicit-int-conversion]
+        LCD_Write4bits(command << 4 , 0);                        //then lower nibble
+        ~~~~~~~~~~~~~~ ~~~~~~~~^~~~
+main.c(78): warning: implicit conversion loses integer precision: 'int' to 'unsigned char' [-Wimplicit-int-conversion]
+        LCD_Write4bits(data << 4 , RS);     //then lower nibble
+        ~~~~~~~~~~~~~~ ~~~~~^~~~
+8 warnings generated.
+compiling main.c...
+linking...
+Program Size: Code=1084 RO-data=636 RW-data=0 ZI-data=608  
+".\Objects\LCD4BIT.axf" - 0 Error(s), 14 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.8.0.pack
+                ARM.CMSIS.5.8.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.5.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.TM4C_DFP.1.1.0.pack
+                Keil.TM4C_DFP.1.1.0
+                Texas Instruments Tiva C Series Device Support and Examples
+   * Component: Startup Version: 1.0.1
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Target_1
+  C:\Users\Eslam Gamal\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include
+  C:\Users\Eslam Gamal\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.5.0
+
+   * Component: Keil::Device:Startup:1.0.1
+      Source file:   Device\Source\ARM\startup_TM4C123.s
+      Source file:   Device\Source\system_TM4C123.c
+      Include file:  Device\Include\TM4C123\TM4C123.h
+Build Time Elapsed:  00:00:00
+</pre>
+</body>
+</html>
